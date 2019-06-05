@@ -2,8 +2,8 @@
 /**
  * Autoload File
  *
- * @category
- * @package
+ * @category  Edit-Flow-Slack-Integration
+ * @package   Edit-Flow-Slack-Integration
  * @author    Bhumi Patel
  */
 
@@ -17,7 +17,7 @@ function wp_custom_autoload( $class_name ) {
 	$class_name = str_replace( '_', '-', $class_name );
 	$filename   = __DIR__ . '/' . sprintf( 'class-%s.php', $class_name );
 
-	if( file_exists( $filename ) ) {
+	if ( file_exists( $filename ) ) {
 		require $filename;
 	}
 }
