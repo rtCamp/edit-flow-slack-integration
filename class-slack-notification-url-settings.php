@@ -4,7 +4,7 @@
  *
  * @category  Edit-Flow-Slack-Integration
  * @package   Edit-Flow-Slack-Integration
- * @author    Bhumi Patel
+ * @author    rtCamp, Bhumi Patel
  */
 
 /**
@@ -25,7 +25,7 @@ class Slack_Notification_Url_Settings {
 	 * Register setting in general and call a slack_notification_url_settings_html().
 	 */
 	public function slack_notification_url_settings() {
-		register_setting( 'general', 'slack_notification_url_settings', 'esc_attr' );
+		register_setting( 'general', 'slack_notification_url_settings' );
 		add_settings_field( 'slack_notification_url_settings', '<label for="slack_notification_url_settings">' . __( 'Slack Notification url Settings', 'slack_notification_url_settings' ) . '</label>', array( $this, 'slack_notification_url_settings_html' ), 'general' );
 	}
 
@@ -33,9 +33,9 @@ class Slack_Notification_Url_Settings {
 	 * Contains input box to set slack url setting.
 	 */
 	public function slack_notification_url_settings_html() {
-		$value = esc_url( get_option( 'slack_notification_url_settings' ) );
+		$value = get_option( 'slack_notification_url_settings', '' );
 		$value = empty( $value ) ? '' : $value;
-		echo '<input type="text" id="slack_notification_url_settings" name="slack_notification_url_settings" class="regular-text ltr" value="' . esc_attr( $value ) . '"/>';
+		echo '<input type="text" id="slack_notification_url_settings" name="slack_notification_url_settings" class="regular-text ltr" value="' . esc_url( $value ) . '"/>';
 		echo '<p class="description"> Webhook URL of slack </p>';
 	}
 

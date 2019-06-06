@@ -4,7 +4,7 @@
  *
  * @category  Edit-Flow-Slack-Integration
  * @package   Edit-Flow-Slack-Integration
- * @author    Bhumi Patel
+ * @author    rtCamp, Bhumi Patel
  */
 
 /**
@@ -28,7 +28,7 @@ class Edit_Flow_Slack_Integration {
 	 */
 	public function send_notification_on_slack( $comment ) {
 
-		$url             = esc_url( get_option( 'slack_notification_url_settings' ) );
+		$url             = get_option( 'slack_notification_url_settings', '' );
 		$post_id         = sanitize_text_field( $comment->comment_post_ID );
 		$post_title      = sanitize_text_field( get_the_title( $post_id ) );
 		$comment_author  = sanitize_text_field( $comment->comment_author );
@@ -47,11 +47,11 @@ class Edit_Flow_Slack_Integration {
 
 		$args = [
 			'method'  => 'POST',
-			'timeout' => 90,
+			'timeout' => 5,
 			'headers' => $headers,
-			'body'    => json_encode( $body ),
+			'body'    => wp_json_encode( $body ),
 		];
 
-		wp_remote_post( $url, $args );
+		wp_remote_post( esc_url( $url ), $args );
 	}
 }
