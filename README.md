@@ -7,13 +7,13 @@ This plugin is to send slack notification when editotial comment added.
 
 **Requires at least:** 4.5
 
-**Tested up to:**
+**Tested up to:** 5.0
 
-**Stable tag:** 
+**Stable tag:** 1.0.0
 
-**License:** 
+**License:** GPLv2 or later (of-course)
 
-**License URI:** 
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
 **Donate Link:** http://rtcamp.com/donate/
 
@@ -42,5 +42,3 @@ Manual Installation
 ### Still need help! ###
 
 Please post your problem in [our free support forum](http://community.rtcamp.com)
-
-### Screenshot ###
