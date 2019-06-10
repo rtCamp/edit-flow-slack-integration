@@ -3,9 +3,9 @@ This plugin is to send slack notification when editotial comment added.
 
 **Contributors:** rtcamp, chandrapatel, mibhumi
 
-**Tags:** 
+**Tags:** edit flow, workflow, editorial, notifications, email, comments, editorial comments
 
-**Requires at least:** 
+**Requires at least:** 4.5
 
 **Tested up to:**
 
@@ -18,7 +18,7 @@ This plugin is to send slack notification when editotial comment added.
 **Donate Link:** http://rtcamp.com/donate/
 
 ## Description ##
-[Edit flow slack integration](https://github.com/rtCamp/Edit-Flow-Slack-Integration) plugin sends a notification on your slack channel when user do editiorial comment.
+[Edit flow slack integration](https://github.com/rtCamp/Edit-Flow-Slack-Integration) plugin sends a notification contains commenter name, comment message and commented post name on your slack channel when user do editiorial comment.
 
 ## Installation ##
 
