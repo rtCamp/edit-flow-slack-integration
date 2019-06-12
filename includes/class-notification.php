@@ -1,18 +1,14 @@
 <?php
 /**
  * Send notification on slack when it gets editorial comment.
- *
- * @category  Edit-Flow-Slack-Integration
- * @package   Edit-Flow-Slack-Integration
- * @author    rtCamp, Bhumi Patel
  */
+
+namespace Edit_Flow_Slack_Integration;
 
 /**
  * Edit-Flow-Slack-Integration
- *
- * @category
  */
-class Edit_Flow_Slack_Integration {
+class Notification {
 
 	/**
 	 * Constructor to call a send notification method.
