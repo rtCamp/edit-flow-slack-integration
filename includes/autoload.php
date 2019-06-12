@@ -10,7 +10,7 @@ namespace Edit_Flow_Slack_Integration;
  *
  * @param array $class_name Name of class file.
  */
-function edit_flow_slack_integration_loader( $class_name ) {
+function autoloader( $class_name ) {
 
 	$class_name = str_replace( 'Edit_Flow_Slack_Integration\\', '', $class_name );
 	$class_name = strtolower( $class_name );
@@ -22,4 +22,4 @@ function edit_flow_slack_integration_loader( $class_name ) {
 	}
 }
 
-spl_autoload_register( 'Edit_Flow_Slack_Integration\edit_flow_slack_integration_loader' );
+spl_autoload_register( 'Edit_Flow_Slack_Integration\autoloader' );

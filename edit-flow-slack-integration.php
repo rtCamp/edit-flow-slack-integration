@@ -3,8 +3,6 @@
  * Edit-Flow-Slack-Integration
  */
 
-namespace Edit_Flow_Slack_Integration;
-
 /**
  * Plugin Name: Edit Flow -Slack Integration
  * Plugin URI: https://github.com/rtCamp/edit-flow-slack-integration
@@ -12,10 +10,20 @@ namespace Edit_Flow_Slack_Integration;
  * Version: 1.0.0
  * Author: rtCamp, Bhumi Patel
  *
- * @package edit_flow_slack_integration
+ * @package Edit_Flow_Slack_Integration
  */
+
+namespace Edit_Flow_Slack_Integration;
 
 require_once 'includes/autoload.php';
 
-$edit_flow_slack_integration     = new Notification();
-$slack_notification_url_settings = new Settings();
+function edit_flow_slack_integration_loader() {
+
+	require_once __DIR__ . '/includes/autoload.php';
+
+	$edit_flow_slack_integration     = new Notification();
+	$slack_notification_url_settings = new Settings();
+
+}
+
+edit_flow_slack_integration_loader();
