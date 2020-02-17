@@ -22,13 +22,6 @@ This plugin is to send slack notification when editotial comment added.
 
 ## Installation ##
 
-Automatic Installation
-
-1. Log in to your WordPress admin panel, navigate to the Plugins menu and click Add New.
-2. In the search field type “Edit Flow Slack Integration” and click Search Plugins. From the search results, pick "Edit Flow Slack Integration" and click Install Now. Wordpress will ask you to confirm to complete the installation.
-
-Manual Installation
-
 1. Extract the zip file.
 2. Upload them to `/wp-content/plugins/` directory on your WordPress installation.
 3. Then activate the Plugin from Plugins page.
