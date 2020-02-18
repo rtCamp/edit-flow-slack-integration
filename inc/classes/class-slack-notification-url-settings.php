@@ -5,13 +5,17 @@
  * @package rt-edit-flow-slack-integration
  */
 
-namespace RT\Edit_Flow_Slack_Integration;
+namespace Edit_Flow_Slack_Integration\Inc\Classes;
+
+use Edit_Flow_Slack_Integration\Inc\Traits\Singleton;
 
 /**
  * Slack notification admin setting
  */
 class Admin_Settings {
 
+	use Singleton;
+	
 	/**
 	 * Slack_Notification_Url_Settings constructor is used to call slack_notification_url_settings.
 	 */

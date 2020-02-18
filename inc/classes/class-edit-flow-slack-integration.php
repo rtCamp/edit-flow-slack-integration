@@ -5,12 +5,16 @@
  * @package rt-edit-flow-slack-integration
  */
 
-namespace RT\Edit_Flow_Slack_Integration;
+namespace Edit_Flow_Slack_Integration\Inc\Classes;
+
+use Edit_Flow_Slack_Integration\Inc\Traits\Singleton;
 
 /**
  * Edit-Flow-Slack-Integration
  */
 class Slack_Notification {
+
+	use Singleton;
 
 	/**
 	 * Constructor to call a send notification method.
