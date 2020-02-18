@@ -2,17 +2,15 @@
 /**
  * Change URL of webhook from general setting.
  *
- * @category  Edit-Flow-Slack-Integration
- * @package   Edit-Flow-Slack-Integration
- * @author    rtCamp, Bhumi Patel
+ * @package rt-edit-flow-slack-integration
  */
 
+namespace RT\Edit_Flow_Slack_Integration;
+
 /**
- * Slack notification URL setting
- *
- * @category
+ * Slack notification admin setting
  */
-class Slack_Notification_Url_Settings {
+class Admin_Settings {
 
 	/**
 	 * Slack_Notification_Url_Settings constructor is used to call slack_notification_url_settings.

@@ -1,26 +1,26 @@
 <?php
-/**
- * Edit-Flow-Slack-Integration
- *
- * @category Edit-Flow-Slack-Integration
- * @package  Edit-Flow-Slack-Integration
- * @author   Bhumi Patel
- */
 
 /**
  * Plugin Name: Edit Flow - Slack Integration Plugin
- * Plugin URI: https://github.com/rtCamp/Edit-Flow-Slack-Integration
- * Descrirption: This plugin gives you a feature of send notification on slack
- * Version: 1.0.0
- * Author: rtCamp, Bhumi Patel
+ * Description: Send notification on slack with the help of web hook.
+ * Plugin URI: https://github.com/rtCamp/edit-flow-slack-integration
+ * Author: rtCamp
+ * Author URI:  https://rtcamp.com
+ * Contributors: Bhumi Patel, Sagar Nasit
+ * License:     GPL2
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Version: 0.1
+ * Text Domain: rt-edit-flow
  *
- * @package WordPress
+ * @package rt-edit-flow-slack-integration
  */
 
+use Edit_Flow_Slack_Integration\Inc\Classes\Slack_Notification;
+use Edit_Flow_Slack_Integration\Inc\Classes\Admin_Settings;
 
-define( 'WP_EDIT_FLOW_SLACK_INTEGRATION_VERSION', '1.0.0' );
+define( 'WP_EDIT_FLOW_SLACK_INTEGRATION_VERSION', '0.1' );
 
-require_once 'autoload.php';
+require_once plugin_dir_path( __FILE__ ) . '/inc/helper/autoload.php';
 
-$edit_flow_slack_integration     = new Edit_Flow_Slack_Integration();
-$slack_notification_url_settings = new Slack_Notification_Url_Settings();
+Slack_Notification::get_instance();
+Admin_Settings::get_instance();
