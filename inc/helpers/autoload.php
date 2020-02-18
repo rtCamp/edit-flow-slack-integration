@@ -2,7 +2,7 @@
 /**
  * Autoloader file for plugin.
  *
- * @package project-name-featuers
+ * @package edit-flow-slack-integration
  */
 
 namespace Edit_Flow_Slack_Integration\Inc\Helpers;

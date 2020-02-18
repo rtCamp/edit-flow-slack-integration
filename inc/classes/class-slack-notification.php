@@ -2,7 +2,7 @@
 /**
  * Send notification on slack when it gets editorial comment.
  *
- * @package rt-edit-flow-slack-integration
+ * @package edit-flow-slack-integration
  */
 
 namespace Edit_Flow_Slack_Integration\Inc;

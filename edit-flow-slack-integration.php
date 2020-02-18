@@ -10,9 +10,9 @@
  * License:     GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Version: 0.1
- * Text Domain: rt-edit-flow
+ * Text Domain: edit-flow-slack-integration
  *
- * @package rt-edit-flow-slack-integration
+ * @package edit-flow-slack-integration
  */
 
 use Edit_Flow_Slack_Integration\Inc\Slack_Notification;
@@ -23,5 +23,6 @@ define( 'WP_EDIT_FLOW_SLACK_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 
 require_once WP_EDIT_FLOW_SLACK_PLUGIN_PATH . 'inc/helpers/autoload.php';
 
+// Initiate classes.
 Slack_Notification::get_instance();
 Admin_Settings::get_instance();
