@@ -5,7 +5,7 @@
  * @package rt-edit-flow-slack-integration
  */
 
-namespace Edit_Flow_Slack_Integration\Inc\Classes;
+namespace Edit_Flow_Slack_Integration\Inc;
 
 use Edit_Flow_Slack_Integration\Inc\Traits\Singleton;
 
@@ -35,8 +35,8 @@ class Slack_Notification {
 		$post_title      = sanitize_text_field( get_the_title( $post_id ) );
 		$comment_author  = sanitize_text_field( $comment->comment_author );
 		$comment_content = sanitize_textarea_field( $comment->comment_content );
-		$format          = "*%s* left a comment on *%s*:\n %s";
-		$text            = sprintf( $format, $comment_author, $post_title, $comment_content );
+		$format          = "*%s* left a comment on *%s:%s*\n\n %s";
+		$text            = sprintf( $format, $comment_author, $post_id, $post_title, $comment_content );
 
 		$headers = [
 			'Content-Type' => 'application/json',
