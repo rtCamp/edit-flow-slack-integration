@@ -2,11 +2,11 @@
 <ruleset name="Edit Flow Slack Integration PHPCS Ruleset">
 	<description>WordPress Coding Standards</description>
 
-	<rule ref="WordPress-Docs" />
 	<rule ref="WordPress-Core">
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
 	</rule>
+
 	<rule ref="WordPress" />
 
 	<config name="testVersion" value="5.4-"/>
