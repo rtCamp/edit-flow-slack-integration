@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Plugin Name: Edit Flow - Slack Integration Plugin
  * Description: Send notification on slack with the help of web hook.
@@ -21,7 +20,7 @@ use Edit_Flow_Slack_Integration\Inc\Admin_Settings;
 define( 'WP_EDIT_FLOW_SLACK_INTEGRATION_VERSION', '0.1' );
 define( 'WP_EDIT_FLOW_SLACK_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 
-require_once WP_EDIT_FLOW_SLACK_PLUGIN_PATH . 'inc/helpers/autoload.php';
+require_once WP_EDIT_FLOW_SLACK_PLUGIN_PATH . 'inc/helpers/autoload.php'; // phpcs:ignore WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant
 
 // Initiate classes.
 Slack_Notification::get_instance();

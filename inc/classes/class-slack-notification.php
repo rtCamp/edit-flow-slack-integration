@@ -49,7 +49,7 @@ class Slack_Notification {
 
 		$args = [
 			'method'  => 'POST',
-			'timeout' => 5,
+			'timeout' => 5, // phpcs:ignore WordPressVIPMinimum.Performance.RemoteRequestTimeout
 			'headers' => $headers,
 			'body'    => wp_json_encode( $body ),
 		];
