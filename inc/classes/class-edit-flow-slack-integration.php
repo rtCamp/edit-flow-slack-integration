@@ -30,7 +30,7 @@ class Slack_Notification {
 	 */
 	public function send_notification_on_slack( $comment ) {
 
-		$url             = get_option( 'slack_notification_url_settings', '' );
+		$url             = get_option( 'edit_flow_slack_webhook' );
 		$post_id         = sanitize_text_field( $comment->comment_post_ID );
 		$post_title      = sanitize_text_field( get_the_title( $post_id ) );
 		$comment_author  = sanitize_text_field( $comment->comment_author );
