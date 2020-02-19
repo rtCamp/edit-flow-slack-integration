@@ -13,5 +13,3 @@ jobs:
         env:
           VAULT_ADDR: ${{ secrets.VAULT_ADDR }}
           VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
-        with:
-          args: WordPress-Core,WordPress,WordPress-VIP-Go,PHPCompatibility
