@@ -2,12 +2,10 @@
 <ruleset name="Edit Flow Slack Integration PHPCS Ruleset">
 	<description>WordPress Coding Standards</description>
 
-	<rule ref="WordPress-Docs" />
-	<rule ref="WordPress-Core">
+	<rule ref="WordPress">
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
 	</rule>
-	<rule ref="WordPress" />
 
 	<config name="testVersion" value="5.4-"/>
 
@@ -15,13 +13,11 @@
 
 	<rule ref="WordPress-VIP-Go" />
 
+	<rule ref="WordPressVIPMinimum" />
+
 	<rule ref="PHPCompatibility">
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax.Found"/>
 	</rule>
 
-	<exclude-pattern>tests/</exclude-pattern>
 	<exclude-pattern>.github/</exclude-pattern>
-	<exclude-pattern>*/dev-lib/*</exclude-pattern>
-	<exclude-pattern>*/node_modules/*</exclude-pattern>
-	<exclude-pattern>*/vendor/*</exclude-pattern>
 </ruleset>

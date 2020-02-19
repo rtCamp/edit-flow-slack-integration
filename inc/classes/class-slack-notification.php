@@ -2,17 +2,19 @@
 /**
  * Send notification on slack when it gets editorial comment.
  *
- * @category  Edit-Flow-Slack-Integration
- * @package   Edit-Flow-Slack-Integration
- * @author    rtCamp, Bhumi Patel
+ * @package edit-flow-slack-integration
  */
+
+namespace Edit_Flow_Slack_Integration\Inc;
+
+use Edit_Flow_Slack_Integration\Inc\Traits\Singleton;
 
 /**
  * Edit-Flow-Slack-Integration
- *
- * @category
  */
-class Edit_Flow_Slack_Integration {
+class Slack_Notification {
+
+	use Singleton;
 
 	/**
 	 * Constructor to call a send notification method.
@@ -28,13 +30,13 @@ class Edit_Flow_Slack_Integration {
 	 */
 	public function send_notification_on_slack( $comment ) {
 
-		$url             = get_option( 'slack_notification_url_settings', '' );
+		$url             = get_option( 'edit_flow_slack_webhook' );
 		$post_id         = sanitize_text_field( $comment->comment_post_ID );
 		$post_title      = sanitize_text_field( get_the_title( $post_id ) );
 		$comment_author  = sanitize_text_field( $comment->comment_author );
 		$comment_content = sanitize_textarea_field( $comment->comment_content );
-		$format          = "*%s* left a comment on *%s*:\n %s";
-		$text            = sprintf( $format, $comment_author, $post_title, $comment_content );
+		$format          = "*%s* left a comment on *%s:%s*\n\n %s";
+		$text            = sprintf( $format, $comment_author, $post_id, $post_title, $comment_content );
 
 		$headers = [
 			'Content-Type' => 'application/json',
@@ -47,7 +49,7 @@ class Edit_Flow_Slack_Integration {
 
 		$args = [
 			'method'  => 'POST',
-			'timeout' => 5,
+			'timeout' => 5, // phpcs:ignore WordPressVIPMinimum.Performance.RemoteRequestTimeout
 			'headers' => $headers,
 			'body'    => wp_json_encode( $body ),
 		];
