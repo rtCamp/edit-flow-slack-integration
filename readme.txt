@@ -5,7 +5,7 @@ Donate link: http://rtcamp.com/donate/
 Tags: edit flow, workflow, editorial, notifications, email, comments, editorial comments
 Requires at least: 4.5
 Tested up to: 5.3
-Requires PHP: 5.4
+Requires PHP Version: 7.0 or Above
 Stable tag: 0.1
 License: GPLv2 or later (of-course)
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

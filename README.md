@@ -11,6 +11,8 @@ This plugin is to send slack notification when editorial comment added.
 
 **Tested up to:** 5.3
 
+**Requires PHP version:** 7.0 or above.
+
 **Stable tag:** 0.1
 
 **License:** GPLv2 or later (of-course)
