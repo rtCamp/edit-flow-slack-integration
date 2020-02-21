@@ -32,15 +32,15 @@ This plugin sends a notification contains commenter name, comment message and co
 * This plugin requires edit flow plugin (https://wordpress.org/plugins/edit-flow/).
 * Set webhook for slack app in general settings.
 
-![Webhook Setting](/screenshots/admin-settings.png?raw=true)
+![Webhook Setting](/screenshots/settings.png?raw=true)
 
 * Add editorial comment on editorial post.
 
-![Add Comment](/screenshots/post-editor.png)
+![Add Comment](/screenshots/post-edit.png?raw=true)
 
 * Now you will get slack notification on specified channel.
 
-![Slack Notification](/screenshots/slack-notification.png)
+![Slack Notification](/screenshots/slack-notification.png?raw=true)
 
 ## Contributing
 
