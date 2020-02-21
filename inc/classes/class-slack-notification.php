@@ -30,13 +30,16 @@ class Slack_Notification {
 	 */
 	public function send_notification_on_slack( $comment ) {
 
-		$url             = get_option( 'edit_flow_slack_webhook' );
-		$post_id         = sanitize_text_field( $comment->comment_post_ID );
-		$post_title      = sanitize_text_field( get_the_title( $post_id ) );
-		$comment_author  = sanitize_text_field( $comment->comment_author );
-		$comment_content = sanitize_textarea_field( $comment->comment_content );
-		$format          = "*%s* left a comment on *%s:%s*\n\n %s";
-		$text            = sprintf( $format, $comment_author, $post_id, $post_title, $comment_content );
+		$url              = get_option( 'edit_flow_slack_webhook' );
+		$post_id          = sanitize_text_field( $comment->comment_post_ID );
+		$post_type        = sanitize_text_field( get_post_type( $post_id ) );
+		$post_type_object = get_post_type_object( $post_type );
+		$post_type_label  = sanitize_text_field( isset( $post_type_object->labels->singular_name ) ? $post_type_object->labels->singular_name : '' );
+		$post_title       = sanitize_text_field( get_the_title( $post_id ) );
+		$comment_author   = sanitize_text_field( $comment->comment_author );
+		$comment_content  = sanitize_textarea_field( $comment->comment_content );
+		$format           = "*%s* left a comment on *%s #%s - %s*\n\n %s";
+		$text             = sprintf( $format, $comment_author, $post_type_label, $post_id, $post_title, $comment_content );
 
 		$headers = [
 			'Content-Type' => 'application/json',
