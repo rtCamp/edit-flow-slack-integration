@@ -1,4 +1,10 @@
-# Edit-Flow-Slack-Integration
+<p align="center">
+<a href="https://rtcamp.com/?ref=edit-flow-slack-integration-repo" target="_blank"><img width="200"src="https://rtcamp.com/wp-content/themes/rtcamp-v9/assets/img/site-logo-black.svg"></a>
+</p>
+
+# Edit-Flow-Slack-Integration 0.1
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+
 This plugin is to send slack notification when editorial comment added.
 
 **Author:** rtCamp
@@ -76,3 +82,8 @@ Once you've decided to commit the time to seeing your pull request through, plea
 ### Still need help! ###
 
 Please post your problem in [our free support forum](http://community.rtcamp.com)
+
+# Does this interest you?
+
+<a href="https://rtcamp.com/"><img src="https://rtcamp.com/wp-content/uploads/2019/04/github-banner@2x.png" alt="Join us at rtCamp, we specialize in providing high performance enterprise WordPress solutions"></a>
+
