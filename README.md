@@ -5,13 +5,13 @@
 # Edit-Flow-Slack-Integration 0.1
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-This plugin is to send slack notification when editorial comment added.
+This plugin extends the ever-popular <a href="https://wordpress.org/plugins/edit-flow/" target="_blank">Edit Flow plugin</a> (plugin-ception, anyone? 😃) and allows teams to keep track of Editorial Comments via Slack.
 
 **Author:** rtCamp
 
 **Contributors:** chandrapatel, mibhumi, sagarnasit
 
-**Tags:** edit flow, workflow, editorial, notifications, email, comments, editorial comments
+**Tags:** edit flow, workflow, editorial, notifications, email, Slack, comments, editorial comments
 
 **Requires at least:** 4.5
 
@@ -21,69 +21,70 @@ This plugin is to send slack notification when editorial comment added.
 
 **Stable tag:** 0.1
 
-**License:** GPLv2 or later (of-course)
+**License:** GPLv2 or later (of course!)
 
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
 **Donate Link:** http://rtcamp.com/donate/
 
 ## Description ##
-This plugin sends a notification contains commenter name, comment message and commented post name along with post id on your slack channel when user do editorial comment.
+This plugin enables Slack notifications for editorial comments within Edit Flow. Notifications include the commenter's name, comment message, post name and post ID.
 
 ## Installation ##
 
 1. Extract the zip file.
-2. Upload them to `/wp-content/plugins/` directory on your WordPress installation.
-3. Then activate the Plugin from Plugins page.
+2. Upload it to the `/wp-content/plugins/` directory in your WordPress installation.
+3. Activate the Editor Flow Slack Integration from your Plugins page.
 
-### Steps required for slack integration ###
-* This plugin requires edit flow plugin (https://wordpress.org/plugins/edit-flow/).
-* Set webhook for slack app in general settings.
+### Adding a Slack integration ###
+* This plugin requires Edit Flow plugin (https://wordpress.org/plugins/edit-flow/).
+* This plugin requires you to set an incoming webhook for Slack (https://slack.com/intl/en-gb/help/articles/115005265063-Incoming-webhooks-for-Slack).
+
+### Screenshots ###
+Singular setting field that the plugin adds (Settings > General > Edit Flow Slack Webhook):
 
 ![Webhook Setting](/screenshots/settings.png?raw=true)
 
-* Add editorial comment on editorial post.
+Adding an Editorial Comment on a post:
 
 ![Add Comment](/screenshots/post-edit.png?raw=true)
 
-* Now you will get slack notification on specified channel.
+Demo Slack notification:
 
 ![Slack Notification](/screenshots/slack-notification.png?raw=true)
 
-## Contributing
+## Contribute
 
-### Report a Bug
+### Reporting a bug 🐞
 
-Before you create a new issue, please search [existing issues](https://github.com/rtCamp/edit-flow-slack-integration/issues) to see if there's an existing resolution to it, or if it's already been fixed in a newer version.
+Before creating a new issue, do browse through the [existing issues](https://github.com/rtCamp/edit-flow-slack-integration/issues) for resolution or upcoming fixes. 
 
-Once you've done a bit of searching and discovered there isn't an open or fixed issue for your bug, please [create a new issue](https://github.com/rtCamp/edit-flow-slack-integration/issues/new). Include as much detail as you can, and clear steps to reproduce if possible.
+If you still need to [log an issue](https://github.com/rtCamp/edit-flow-slack-integration/issues/new), making sure to include as much detail as you can, including clear steps to reproduce your issue if possible.
 
-### Create a pull request
+### Creating a pull request
 
-Want to contribute a new feature? Please first open a new issue to discuss whether the feature is a good fit for the project.
+Want to contribute a new feature? Start a conversation by logging an [issue](https://github.com/rtCamp/edit-flow-slack-integration/issues).
 
-Once you've decided to commit the time to seeing your pull request through, please follow our guidelines for creating a pull request.
+Once you're ready to send a pull request, please run through the following checklist: 
 
-1. Search existing issues. If you can't find anything related to what you want to work on, open a new issue.
+1. Browse through the [existing issues](https://github.com/rtCamp/edit-flow-slack-integration/issues) for anything related to what you want to work on. If you don't find any related issues, open a new one.
 
-1. Fork the repository.
+1. Fork this repository.
 
-1. Create a branch from `develop` for each issue you'd like to address. Commit your changes.
+1. Create a branch from `develop` for each issue you'd like to address and commit your changes.
 
 1. Push the code changes from your local clone to your fork.
 
-1. Open a pull request.
+1. Open a pull request and that's it! We'll with feedback as soon as possible (Isn't collaboration a great thing? 😌)
 
-1. Respond to code review feedback in a timely manner, recognizing development is a collaborative process.
-
-1. You need at least one approval and Once your pull request has passed code review and tests, it will be merged into `develop` and be in the pipeline for the next release.
+1. Once your pull request has passed final code review and tests, it will be merged into `develop` and be in the pipeline for the next release. Props to you! 🎉
 
 
-### Still need help! ###
+### Need help? ###
 
-Please post your problem in [our free support forum](http://community.rtcamp.com)
+Drop by [our free support forum](http://community.rtcamp.com). We're a friendly bunch.
 
-# Does this interest you?
+# BTW, We're Hiring!
 
 <a href="https://rtcamp.com/"><img src="https://rtcamp.com/wp-content/uploads/2019/04/github-banner@2x.png" alt="Join us at rtCamp, we specialize in providing high performance enterprise WordPress solutions"></a>
 
