@@ -42,12 +42,15 @@ This plugin enables Slack notifications for editorial comments within Edit Flow.
 
 ### Screenshots ###
 Singular setting field that the plugin adds (Settings > General > Edit Flow Slack Webhook):
+
 ![Webhook Setting](/screenshots/settings.png?raw=true)
 
 Adding an Editorial Comment on a post:
+
 ![Add Comment](/screenshots/post-edit.png?raw=true)
 
 Demo Slack notification:
+
 ![Slack Notification](/screenshots/slack-notification.png?raw=true)
 
 ## Contribute
