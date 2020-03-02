@@ -2,7 +2,7 @@
 <a href="https://rtcamp.com/?ref=edit-flow-slack-integration-repo" target="_blank"><img width="200"src="https://rtcamp.com/wp-content/themes/rtcamp-v9/assets/img/site-logo-black.svg"></a>
 </p>
 
-# Edit-Flow-Slack-Integration - v0.1
+# Edit Flow Slack Integration - v0.1
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 This plugin extends the ever-popular <a href="https://wordpress.org/plugins/edit-flow/" target="_blank">Edit Flow plugin</a> (plugin-ception, anyone? 😃) and allows teams to keep track of Editorial Comments via Slack.
