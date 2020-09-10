@@ -11,5 +11,4 @@ jobs:
       - name: Run PHPCS inspection
         uses: docker://rtcamp/action-phpcs-code-review:v2.0.0
         env:
-          VAULT_ADDR: ${{ secrets.VAULT_ADDR }}
-          VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
+          GH_BOT_TOKEN: ${{ secrets.RTBOT_TOKEN }}
